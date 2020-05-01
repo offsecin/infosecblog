@@ -1,5 +1,5 @@
 # Just Another Security Blog For Self Notes
-This blog is just another security blogs for my own notes and may be useful for others too
+This blog is just another security blog for my own notes and resources.
 
 ## License
 
