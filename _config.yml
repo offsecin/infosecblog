@@ -1,4 +1,4 @@
-logo: # add logo name
+logo: SAKET SAURAV # add logo name
 title: Information Security Blog.
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -16,11 +16,11 @@ banner-desc: # add banner description
 
 # Author settings
 author-pic: face.jpg # your photo
-author-name: Saket Saurav# your name
+author-name: Saket Saurav #your name
 about-author: A student and information security enthusiast. # about author
 email: offseconhtb@gmail.com # your email
-#hone: +919602470565 
-#ebsite: https://dwayne.example.com # you website
+#Phone: +919602470565 
+#Website: https://dwayne.example.com # you website
 
 # Social link
 #google_url:    # add url link
@@ -31,10 +31,10 @@ instagram_url: https://www.instagram.com/saketsourav_111# add url link
 #acebook_url:  # add url link
 
 # Disqus
-discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+#discus_identifier: offsecin # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
 
 # Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+#mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Tracker
 analytics:
