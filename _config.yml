@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Just a security blog for self notes and resources i use for learning I.T Security.It is intended to manage resources for bug hunting, red teaming,network pentesting.
 permalink: ':title/'
 baseurl: "/bef" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://offsecin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: homepage.mp4 # add banner video. Add your video file to the folder video
