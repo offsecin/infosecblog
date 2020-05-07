@@ -39,9 +39,9 @@ It hardly took  3-5 days and i was greeted with this email
 
 
 # Exam Tips and Resources
-1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.
-2.Practice privilege escalation in it's best way.
-3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to kow the basics.
+1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.<br />
+2.Practice privilege escalation in it's best way. <br />
+3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to kow the basics. <br />
 
 Resources i used.....
 
