@@ -59,8 +59,9 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to kow the basics. <br />
 </span>
 <span style="color:green">
-Resources i used.....
- <!-- _backgroundColor: "#FF0000" --
-1
+Resources i used....
 </span>.
-
+test
+<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0;">
+<a href="/donate">TEST</a>
+</div>
