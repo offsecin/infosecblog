@@ -47,8 +47,9 @@ plugins_dir:
   - jekyll-sitemap
 
 gems:
-  - jekyll-paginate
-  - jekyll-sitemap
+      
+      - jekyll-sitemap
+      - jekyll-paginate
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
