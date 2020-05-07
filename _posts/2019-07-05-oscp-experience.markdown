@@ -53,7 +53,7 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 <br />
 </span>
 # Exam Tips and Resources
-<div style="background-color:rgba(0, 0, 0, 0.8);">
+
 <span style="color:green">
 1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.<br />
 2.Practice privilege escalation in it's best way. <br />
@@ -62,5 +62,4 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 <span style="color:green">
 Resources i used....
 </span>.
-test
-</div>
+
