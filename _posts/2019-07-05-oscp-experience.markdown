@@ -7,6 +7,7 @@ description: This post is about my OSCP journey as a computer science student in
 tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 ---
 
+<span style="color:green">
 This is my first  blog so please excuse me for any sort of errors.
 
 Today i want to describe how i got my OSCP on 21th of october,compromising five out of five boxes.
@@ -44,7 +45,6 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to kow the basics. <br />
 
 Resources i used.....
-<p>
- <span style="color:blue">some *blue* text</span>.
-  </p>
+
+</span>.
 
