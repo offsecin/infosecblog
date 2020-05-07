@@ -35,7 +35,7 @@ This time i was really not that nervous beacause i knew i could most probably do
 
 # Result 
 It hardly took  3-5 days and i was greeted with this email <br />
-![email]({{ site.url }}/assets/img/email.png)
+![email]({{ site.url }} email.png)
 <br />
 
 # Exam Tips and Resources
