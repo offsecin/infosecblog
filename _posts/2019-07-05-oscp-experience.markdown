@@ -34,9 +34,9 @@ I prepared many sample  previous lab walkthroughs to make myself comforatable wi
 This time i was really not that nervous beacause i knew i could most probably do that.I took my second attempt (after passing my first one LOL) and i started with 25 points  buffer  overflow box.It took  me few hours to get in and i was done with that.Next i was able to get root on 10 points box.Next one was 25 points windows box.I got user shell very quick but it took me around 2-3 hours to get Administrator shell.This was the most difficult box for me as i had never done any previous box either on Hackthebox or on OSCP lab machines.It was tough.Next one was another windows box with 20 points.I was able to get Administrator shell very quickly.Finally there was a linux box of 20points which i used my only metasploit (allowed only once during OSCP as you all knows).Now i did  all the 5 boxes.But this time i took my all the screenshots ,reviewd them.Not only that i did all the machines once again to be sure that i may not miss anything.Couple of hours were left to finish the exam but i ended it quick.And went straight to prepare my report without any delay.I didn't sleep at all neither i eat anything until was done with report and submitted that successfully.
 
 # Result 
-It hardly took  3-5 days and i was greeted with this email
-<img src="https://github.com/offsecin/bef/blob/master/assets/img/email.png"> 
-
+It hardly took  3-5 days and i was greeted with this email <br />
+![email]({{ site.url }}/assets/img/email.png)
+<br />
 
 # Exam Tips and Resources
 1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.<br />
