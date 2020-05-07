@@ -63,5 +63,5 @@ Resources i used....
 </span>.
 test
 <div style="background-color:rgba(0, 0, 0, 1); text-align:center; vertical-align: middle; padding:40px 0;">
-<a href="/donate">TEST</a>
+<a href="/donate">T</a>
 </div>
