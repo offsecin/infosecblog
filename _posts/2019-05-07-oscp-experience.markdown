@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "What it takes to be an OSCP as a  college student"
-img: OSCP.jpg # Add image post (optional)
+img: OSCP.png # Add image post (optional)
 date: 2019-07-07 12:54:00 +0300
 description: This post is about my OSCP journey as a computer science student in my third year of college.
-tag: [Cyber Security,Offensive security,OSCP,Hacking]
+tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 ---
 
 This is my first  blog so please excuse me for any sort of errors.
