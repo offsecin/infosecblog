@@ -10,7 +10,7 @@ tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 This is my first  blog so please excuse me for any sort of errors.
 
 Today i want to describe how i got my OSCP on 21th of october,compromising five out of five boxes.
-The OSCP journey began when i was in first year of my college.I started practicing on hackthebox after my college.I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs.Then i continued practicing on there untill i was very sure that i could qualify OSCP.Beacuse i was from a  lower middle class family,i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a got,meanwhile i had done most of the recommended boxes for OSCP at http://vulnhub.com and on http://www.hackhtebox.eu.
+The OSCP journey began when i was in first year of my college.I started practicing on hackthebox after my college.I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs.Then i continued practicing on there untill i was very sure that i could qualify OSCP.Beacuse i was from a  lower middle class family,i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a got,meanwhile i had done most of the recommended boxes for OSCP at [Vulnhub](http://vulnhub.com) and on [Hackthebox](http://www.hackhtebox.eu).
 
 
 # Preparation Time
