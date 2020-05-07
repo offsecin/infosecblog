@@ -36,7 +36,7 @@ This time i was really not that nervous beacause i knew i could most probably do
 # Result 
 It hardly took  3-5 days and i was greeted with this email
 img: email.png 
-![EMAIL ](email.png)
+![EMAIL](/assets/img/email.png)
 
 # Exam Tips and Resources
 1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.
