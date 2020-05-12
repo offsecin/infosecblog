@@ -69,7 +69,7 @@ Resources i used
  <span style="color:pink">
  2.Cyber Mentor Buffer Overlow Series 
 </span> [Cyber Mentor] (https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G) 
- <span style="color:cyan">
+ <span style="color:pink">
  <p>3.Other Resources https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md
  https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide
  https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97
