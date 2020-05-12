@@ -59,9 +59,7 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to know the basics. <br />
 </span>
 <h1>
-<span style="color:red">
- <br> OSCP Reference
- </span>
+<span style="color:red"> OSCP Reference </span>
  <h1>
  <p>
  <span style="color:SlateBlue">
