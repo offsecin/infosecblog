@@ -58,12 +58,19 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 2.Practice privilege escalation in it's best way. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to know the basics. <br />
 </span>
-<span style="color:cyan">
+<span style="color:pink">
 Resources i used
  </span>
- <span style="color:cyan">1. Ippsec YouTube Channel</span>.  [Ippsec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA) </span>.
- <span style="color:cyan">2.Cyber Mentor Buffer Overlow Series </span> [Cyber Mentor] (https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G) 
- <span style="color:cyan"><p>3.Other Resources https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md
+ <span style="color:cyan">
+ 
+ 1. Ippsec YouTube Channel</span>
+ [Ippsec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA) 
+ 
+ <span style="color:pink">
+ 2.Cyber Mentor Buffer Overlow Series 
+</span> [Cyber Mentor] (https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G) 
+ <span style="color:cyan">
+ <p>3.Other Resources https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md
  https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide
  https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97
  https://awesomeopensource.com/project/SecWiki/linux-kernel-exploits
