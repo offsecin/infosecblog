@@ -60,33 +60,33 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 </span>
 <p>
 <span style="color:SlateBlue">
- <br> Resources i used   </br />
- <br> 1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> </br />
- <br> Ippsec's channel  was  what i used during 90% of my prepartion.</br />
+ <br> Resources i used   <br />
+ <br> 1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> <br />
+ <br> Ippsec's channel  was  what i used during 90% of my prepartion.<br />
  <br>2. https://0xdf.gitlab.io/ </br />
-  <br>3. <a href="https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G">Cyber Mentor BOF Series</a></br />
- <br> 4.Other Resources </br />
-  <br>https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md </br />
- <br> https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide </br />
- <br> https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97</br />
-  <br>https://awesomeopensource.com/project/SecWiki/linux-kernel-exploits </br />
- <br> https://github.com/lucyoa/kernel-exploits </br />
- <br> https://github.com/xapax/security/blob/master/privilege_escalation_-_linux.md </br />
- <br> https://blackwintersecurity.com/ </br />
- <br> https://www.jpsecnetworks.com/week-7-oscp-preparation-buffer-overflow/ </br />
+  <br>3. <a href="https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G">Cyber Mentor BOF Series</a><br />
+ <br> 4.Other Resources <br />
+  <br>https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md <br />
+ <br> https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide <br />
+ <br> https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97<br />
+  <br>https://awesomeopensource.com/project/SecWiki/linux-kernel-exploits <br />
+ <br> https://github.com/lucyoa/kernel-exploits <br />
+ <br> https://github.com/xapax/security/blob/master/privilege_escalation_-_linux.md <br />
+ <br> https://blackwintersecurity.com/ <br />
+ <br> https://www.jpsecnetworks.com/week-7-oscp-preparation-buffer-overflow/ <br />
  <br> https://github.com/abatchy17/WindowsExploits </br />
- <br> https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS08-025 </br />
- <br> https://sevrosecurity.com/checklists/windows-priv-esc/ </br />
- <br> https://github.com/21y4d/Windows_BufferOverflowx32 </br />
- <br> https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/ </br />
- <br> https://securism.wordpress.com/oscp-notes-privilege-escalation-windows/ </br />
+ <br> https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS08-025 <br />
+ <br> https://sevrosecurity.com/checklists/windows-priv-esc/ <br />
+ <br> https://github.com/21y4d/Windows_BufferOverflowx32 <br />
+ <br> https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/ <br />
+ <br> https://securism.wordpress.com/oscp-notes-privilege-escalation-windows/ <br />
  <br> https://infamoussyn.wordpress.com/2014/07/11/gaining-a-root-shell-using-mysql-user-defined-functions-and-setuid-binaries/ </br />
- <br> https://hackingandsecurity.blogspot.com/2017/09/oscp-tricks.html </br />
- <br> https://daya.blog/2018/01/06/oscp-ref/ </br />
- <br> https://github.com/rewardone/OSCPRepo/tree/master/scripts/recon_enum </br />
+ <br> https://hackingandsecurity.blogspot.com/2017/09/oscp-tricks.html <br />
+ <br> https://daya.blog/2018/01/06/oscp-ref/ <br />
+ <br> https://github.com/rewardone/OSCPRepo/tree/master/scripts/recon_enum <br />
  <br> https://scund00r.com/all/oscp/2018/02/25/passing-oscp.html </br />
- <br> http://futureoscp.blogspot.com/2017/10/usefull-oscp-material.html </br />
- <br> https://github.com/Optixal/OSCP-PWK-Notes-Public </br />
+ <br> http://futureoscp.blogspot.com/2017/10/usefull-oscp-material.html <br />
+ <br> https://github.com/Optixal/OSCP-PWK-Notes-Public <br />
  </p></span>
  
  
