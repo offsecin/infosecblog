@@ -60,7 +60,7 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 </span>
 
 <span style="color:red">
- <br><h1> OSCP Reference Materials</h1>
+ <br><h1> OSCP References</h1>
  </span>
  <p>
  <span style="color:SlateBlue">
