@@ -60,7 +60,7 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 </span>
 <p>
 <span style="color:SlateBlue">
-Resources i used
+ <br> Resources i used   </br />
  1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> </br />
  <br> Ippsec's channel  was  what i used during 90% of my prepartion.</br />
 2.  https://0xdf.gitlab.io/ </br />
