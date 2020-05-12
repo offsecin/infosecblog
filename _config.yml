@@ -1,6 +1,6 @@
 logo: Home  # add logo name
 title: Information Security Blog, OSCP Experience,OSCP as a college student in india.
-description: OSCP IN INDIA,OSCP AS STUDENT,Saket Saurav OSCP Experience,CYBER SECURITY,HACKING,OSCP EXAM,Just a security blog for self notes and resources i use for learning I.T Security.It is intended to manage resources for bug hunting, red teaming,network pentesting.
+description: "OSCP IN INDIA,OSCP AS STUDENT,Saket Saurav OSCP Experience,CYBER SECURITY,HACKING,OSCP EXAM"
 permalink: ':title/'
 baseurl: "/bef" # the subpath of your site, e.g. /blog
 url: "https://offsecin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
