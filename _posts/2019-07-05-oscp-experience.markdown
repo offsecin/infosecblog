@@ -13,7 +13,7 @@ This is my first  blog so please excuse me for any sort of errors.<br />
 
 <span style="color:green">
 Today i want to describe how i got my OSCP  Certification in the month of october 2019,compromising five out of five boxes.
-The OSCP journey began when i was in first year of my college.I started practicing on hackthebox after my college.I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs.Then i continued practicing on there untill i was very sure that i could qualify OSCP.Beacuse i was from a  lower middle class family,And the OSCP exam is very costly (at leat to me ), so i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a go,meanwhile i had done most of the recommended boxes for OSCP at</span> [Vulnhub](http://vulnhub.com)  <span style="color:green">  and on </span> [Hackthebox](http://www.hackhtebox.eu). <span style="color:green"> I had done many boxes but initially i started doing them with the help of  walkthrough's.Then slowly i could do that myself with little or no  hints.Still i struggle with insane level boxes on hackthebox. </span>
+The OSCP journey began when i was in first year of my college. I started practicing on hackthebox after my college. I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs after my college. Then i continued practicing on there untill i was very sure that i could qualify OSCP. Beacuse i was from a  lower middle class family ,And the OSCP exam is very costly (at least to me ), so i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a go,meanwhile i had done most of the recommended boxes for OSCP at</span> [Vulnhub](http://vulnhub.com)  <span style="color:green">  and on </span> [Hackthebox](http://www.hackhtebox.eu). <span style="color:green"> I had done many boxes but initially i started doing them with the help of  walkthrough's.Then slowly i could do that myself with little or no  hints.Still i struggle with insane level boxes on hackthebox. </span>
 
 # Preparation Time
 <span style="color:green">
@@ -38,7 +38,7 @@ I was feeling guilty at myself.But that gave me a lesson.
 # Lesson's Learned
 <span style="color:green">
 Now it was my time to learn how to be sincere as i my was lazy or you can call me whatever you wish.
-I prepared many sample  previous lab walkthroughs to make myself comforatable with Reporting issue.
+I have to prepare many sample Reports including previous lab walkthroughs to make myself comforatable with Reporting issue.
  </span>
 
 # Exam Time Again
@@ -58,7 +58,37 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 2.Practice privilege escalation in it's best way. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to kow the basics. <br />
 </span>
-<span style="color:green">
-Resources i used....
-</span>.
+<span style="color:cyan">
+Resources i used
+ </span>
+ <span style="color:cyan">1. Ippsec YouTube Channel</span>.  [Ippsec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA) </span>.
+ <span style="color:cyan">2.Cyber Mentor Buffer Overlow Series </span> [Cyber Mentor] (https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G) 
+ <span style="color:cyan"><p>3.Other Resources https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md
+ https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide
+ https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97
+ https://awesomeopensource.com/project/SecWiki/linux-kernel-exploits
+ https://github.com/lucyoa/kernel-exploits
+ https://github.com/xapax/security/blob/master/privilege_escalation_-_linux.md
+ https://blackwintersecurity.com/
+ https://www.jpsecnetworks.com/week-7-oscp-preparation-buffer-overflow/
+ https://github.com/abatchy17/WindowsExploits
+ https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS08-025
+ https://sevrosecurity.com/checklists/windows-priv-esc/
+ https://github.com/21y4d/Windows_BufferOverflowx32
+ https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/
+ https://securism.wordpress.com/oscp-notes-privilege-escalation-windows/
+ https://infamoussyn.wordpress.com/2014/07/11/gaining-a-root-shell-using-mysql-user-defined-functions-and-setuid-binaries/
+ https://hackingandsecurity.blogspot.com/2017/09/oscp-tricks.html
+ https://daya.blog/2018/01/06/oscp-ref/
+ https://github.com/rewardone/OSCPRepo/tree/master/scripts/recon_enum
+ https://scund00r.com/all/oscp/2018/02/25/passing-oscp.html
+ http://futureoscp.blogspot.com/2017/10/usefull-oscp-material.html
+ https://0xdf.gitlab.io/
+ https://github.com/Optixal/OSCP-PWK-Notes-Public
+ </p></span>
+ 
+ 
+ 
+ 
+ 
 
