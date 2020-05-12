@@ -3,7 +3,7 @@ layout: post
 title: "What it takes to be an OSCP as a  college student"
 img: OSCP.png # Add image post (optional)
 date: 2019-05-07 11:35:00 AM
-description: This post is about my OSCP journey as a computer science student in my third year of college.
+description: OSCP Experience,OSCP in india,OSCP as a college Student,OSCP Resources,Noob to OSCP
 tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 ---
 
@@ -11,7 +11,7 @@ tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 This is my first  blog so please excuse me for any sort of errors.<br />
  </span>
 <span style="color:green">
-Today i want to describe how i got my OSCP on 21th of october,compromising five out of five boxes.
+Today i want to describe how i got my OSCP  Certification delivery on 21th of September,compromising five out of five boxes.
 The OSCP journey began when i was in first year of my college.I started practicing on hackthebox after my college.I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs.Then i continued practicing on there untill i was very sure that i could qualify OSCP.Beacuse i was from a  lower middle class family,i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a got,meanwhile i had done most of the recommended boxes for OSCP at
 </span> [Vulnhub](http://vulnhub.com)<span style="color:green"> and on </span> [Hackthebox](http://www.hackhtebox.eu).
 
