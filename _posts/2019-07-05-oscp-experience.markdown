@@ -60,7 +60,8 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 </span>
 
 <span style="color:red">
- <br> <h1>OSCP Reference Materials</h1>
+ <br><h1> OSCP Reference Materials</h1>
+ </span>
  <p>
  <span style="color:SlateBlue">
  <br> 1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> 
