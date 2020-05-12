@@ -54,12 +54,14 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 # Exam Tips and Resources
 
 <span style="color:green">
-1.Report should be very well documented and please take it very seriously else you may fail.I found someof my friend's failed at exam because of their report after my exam.<br />
-2.Practice privilege escalation in it's best way. <br />
-3.OSCP is not that hard but also it's not very easy.It's fully practical and gives you  real and practical experience of Penetration Testing.So it demands you to know the basics of exploitation.<br />
+1.Practice as many boxes as you can. OSCP won't ask you for something fancy other than what you have beem taught in labs. But exam machines can be a bit more diffcult than your labs.
+1.Report should be very well documented and please take it very seriously else you may have to suffer.<br />
+2.Practice privilege escalation in it's best way , most importantly for windows.<br />
+3.Make sure you don't miss any screenshots throughout you exam.
+4.OSCP is not that hard but also it's not very easy.It's fully practical and gives you  real and practical experience of Penetration Testing.So it demands you to know the basics of exploitation. So there is no reason to be scared or feel nervous during exam.<br />
 </span>
 <h3>
-<span style="color:red"> OSCP Reference </span>
+<span style="color:red"> OSCP Reference - These are more than enough to be earn OSCP (in my opinion.)</span>
  <h3>
  <p>
  <span style="color:SlateBlue">
@@ -89,7 +91,6 @@ It hardly took  3-5 days and i was greeted with this email. <br />
  <br> https://scund00r.com/all/oscp/2018/02/25/passing-oscp.html 
  <br> http://futureoscp.blogspot.com/2017/10/usefull-oscp-material.html 
  <br> https://github.com/Optixal/OSCP-PWK-Notes-Public 
-
  </span>
   </p>
  
