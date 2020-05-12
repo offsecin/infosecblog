@@ -58,10 +58,11 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 2.Practice privilege escalation in it's best way. <br />
 3.OSCP is not that hard but also it's not very easy.But it's fully practical and gives you some real exoperience of Penetration Testing.So it demands you to know the basics. <br />
 </span>
-
+<h1>
 <span style="color:red">
- <br><h1> OSCP References</h1>
+ <br> OSCP Reference
  </span>
+ <h1>
  <p>
  <span style="color:SlateBlue">
  <br> 1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> 
