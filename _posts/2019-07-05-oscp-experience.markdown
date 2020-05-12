@@ -10,13 +10,14 @@ tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA]
 <span style="color:green">
 This is my first  blog so please excuse me for any sort of errors.<br />
  </span>
+
+<p>
  <span style="color:green">
- <p>
 Today i want to describe how i got my OSCP  Certification delivery on 21th of September,compromising five out of five boxes.
 The OSCP journey began when i was in first year of my college.I started practicing on hackthebox after my college.I was hardly able to get 4-5 hours of time to utilize that for cyber security stuffs.Then i continued practicing on there untill i was very sure that i could qualify OSCP.Beacuse i was from a  lower middle class family,i wanted to pass in the very first attempt.Now after two years when i began my third year of engineering i decided to give it a got,meanwhile i had done most of the recommended boxes for OSCP at
  [Vulnhub](http://vulnhub.com) and on [Hackthebox](http://www.hackhtebox.eu).
-</p>
 </span>
+ </p>
 # Preparation Time
 <span style="color:green">
 It was the in  month of may when i signed up for the OSCP course (30 days LAB Access) because it was my vacation in college,a nice moment to utilize that for OSCP.Aso i signed up only for 30 days although you can take for 30,60 or 90 days.After few days on 9th june 2019 i received my Penetration Testing Course Material(PWK).The excitement was at it's peak.I was given 72 hours to download the material i.e videos attached + pdf's.I quickly downloaded them and started doing the labs.On the very first day of my OSCP i was able to compromise five linux boxes.Most of these boxes were easy to medium linux box.Linux was my strong point,so i decided to go with linux and kept windows to be done at last(Please dont do this if you are not comfortable with windows).Simlarly on the second,third,fourth and fifth day i was able to get five boxes daily.During this time i was stuck at one or two machines but i went to OSCP forum for the help and the comments from peoples there was enough to get me in the right direction.
