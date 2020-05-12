@@ -2,7 +2,7 @@
 layout: post
 title: My OSCP Experience .
 img: OSCP.png # Add image post (optional)
-date: 2019-05-07 11:35:00 AM
+date: 2020-05-07 11:35:00 AM
 description: OSCP Experience,OSCP in india,OSCP as a college Student,OSCP Resources,Noob to OSCP
 tag: [Cyber Security,Offensive security,OSCP,Hacking,OSCP IN INDIA,Penetration Testing,OSCP Internship]
 ---
