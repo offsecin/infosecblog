@@ -64,10 +64,10 @@ It hardly took  3-5 days and i was greeted with this email. <br />
  <p>
  <span style="color:SlateBlue">
  <br> 1. <a href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Ippsec YouTube Channel</a> 
- <br> Ippsec's channel  was  what i used during 90% of my prepartion.<br />
+ <br> Ippsec's channel  was  what i used during 90% of my prepartion.
  <br>2. https://0xdf.gitlab.io/ 
-  <br>3. <a href="https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G">Cyber Mentor BOF Series</a><br />
- <br> 4.Other Resources <br />
+  <br>3. <a href="https://www.youtube.com/watch?v=qSnPayW6F7U&list=PLLKT__MCUeix3O0DPbmuaRuR_4Hxo4m3G">Cyber Mentor BOF Series</a>
+ <br> 4.Other Resources 
   <br>https://github.com/wwong99/pentest-notes/blob/master/oscp_resources/OSCP-Survival-Guide.md 
  <br> https://github.com/xxooxxooxx/xxooxxooxx.github.io/wiki/OSCP-Survival-Guide 
  <br> https://medium.com/@hakluke/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97
