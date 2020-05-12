@@ -61,7 +61,7 @@ It hardly took  3-5 days and i was greeted with this email. <br />
 4.OSCP is not that hard but also it's not very easy.It's fully practical and gives you  real and practical experience of Penetration Testing.So it demands you to know the basics of exploitation. So there is no reason to be scared or feel nervous during exam.<br />
 </span>
 <h3>
-<span style="color:red"> OSCP Reference - These are more than enough to be earn OSCP (in my opinion.)</span>
+<span style="color:red"> OSCP Reference - These are more than enough to be an OSCP holder (in my opinion.)</span>
  <h3>
  <p>
  <span style="color:SlateBlue">
