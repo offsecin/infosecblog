@@ -4,9 +4,9 @@ description: > #test
   OSCP IN INDIA,OSCP AS STUDENT,Saket Saurav OSCP Experience,CYBER SECURITY,HACKING,OSCP EXAM
   saket saurav information security blog
 permalink: ':title/'
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://offsecin.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-
+baseurl: "/bef" # the subpath of your site, e.g. /blog
+url: "https://offsecin.github.io/bef" # the base hostname & protocol for your site, e.g. http://example.com
+BASE_PATH : http://offsecin.github.io
 # Banner settings
 video: homepage.mp4 # add banner video. Add your video file to the folder video
 banner-title: # add banner title
