@@ -106,3 +106,20 @@ Android does not have the traditional /etc/password file and its system UIDs are
 
 Note: While the shared user ID facility is not recommended for non-system apps, it’s available to third-party applications as well. In order to share the same UID, applications need to be signed by the same code signing key. Additionally, because adding a shared user ID to a new version of an installed app causes it to change its UID, the system disallows this. Therefore, a shared user ID cannot be added retroactively, and apps need to be designed to work with a shared ID from the start.
 
+##### Android Permissions : To DO
+
+# Android Multi-User Support
+Each user is assigned a unique user ID, starting with 0, and users are given their own dedicated data directory under /data/system/users/<user ID>/, which is called the user’s system directory. This directory hosts user-specific settings such as homescreen parameters, account data, and a list of currently installed applications. While application binaries are shared between users, each user gets a copy of an application’s data directory. To distinguish applications installed for each user, Android assigns a new effective UID to each application when it is installed for a particular user. This effective UID is based on the target physical user’s user ID and the app’s UID in a single-user system (the app ID). This composite structure of the granted UID guarantees that even if the same application is installed by two different users, both application instances get their own sandbox.
+The user to first initialize the device is called the device owner, and only they can manage other users or perform administrative tasks that influence the whole device (such as factory reset).
+
+# Android SE-Linux Feature
+
+Android uses Security-Enhanced Linux (SELinux) to enforce mandatory access control (MAC) over all processes, even processes running with root/superuser privileges (Linux capabilities). 
+With SELinux, Android can better protect and confine system services, control access to application data and system logs, reduce the effects of malicious software, and protect users from potential flaws in code on mobile devices.
+SELinux operates on the principle of default denial: Anything not explicitly allowed is denied. SELinux can operate in two global modes:
+    * Permissive mode, in which permission denials are logged but not enforced.
+    * Enforcing mode, in which permissions denials are both logged and enforced.
+Android includes SELinux in enforcing mode and a corresponding security policy that works by default across AOSP. In enforcing mode, disallowed actions are prevented and all attempted violations are logged by the kernel to dmesg and logcat
+ 
+ Ref: https://source.android.com/security/selinux
+ 
