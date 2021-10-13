@@ -51,14 +51,13 @@ Note: Dalvik and Oracle’s JVM have different architectures—register-based in
     App Installation takes more time due to dex.
     More internal storage is required.
     
-    Ref: https://www.geeksforgeeks.org/what-is-dvmdalvik-virtual-machine/
+Ref: https://www.geeksforgeeks.org/what-is-dvmdalvik-virtual-machine/
     
-    
-   # Java Runtime Environment (JRE) 
+# Java Runtime Environment (JRE) 
    The Java Runtime Environment (JRE) provides the libraries, the Java Virtual Machine, and other components to run applets and applications written in the Java programming language. In addition, two key deployment technologies are part of the JRE: Java Plug-in, which enables applets to run in popular browsers; and Java Web Start, which deploys standalone applications over a network. It is also the foundation for the technologies in the Java 2 Platform, Enterprise Edition (J2EE) for enterprise software development and deployment. The JRE does not contain tools and utilities such as compilers or debuggers for developing applets and applications.
    
    
-  # Java Development Kit (JDK)
+# Java Development Kit (JDK)
 
 The JDK is a superset of the JRE, and contains everything that is in the JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications.
    
@@ -73,9 +72,9 @@ Ref: https://developer.android.com/training/articles/perf-jni
 
 
 # Inter-Process Communication (IPC)
-Android is a unix like system that have separate address spaces and a process cannot directly access another process's memory (called process isolation).However, if a process wants to offer some useful service(s) to other processes, it needs to provide some mechanism that allows other processes to discover and interact with those services. That mechanism is referred to as IPC.
+Android is a unix like system that have separate address spaces and a process cannot directly access another process's memory (called process isolation).However, if a process wants to offer some useful service(s) to other processes, it needs to provide some mechanism that allows other processes to discover and interact with those services. That mechanism is referred to as IPC.These include files, signals, sockets, pipes, semaphores, shared memory, message queues, and so on. While Android uses some of these (such as local sockets), it does not support others (namely System VIPCs like semaphores, shared memory segments, and message queues)
 
-For Andoid we have below IPC mechanisms
+For Andoid we have few of the below IPC mechanisms
 1) Intents: These are messages which components can send and receive. It is a universal mechanism of passing data between processes. With help of the intents one can start services or activities, invoke broadcast receivers and so on.
 
 2) Bundles: These are entities of data that is passed through. It is similar to the serialization of an object, but much faster on android. Bundle can be read from intent via the getExtras() method.
@@ -86,6 +85,18 @@ For Andoid we have below IPC mechanisms
 Ref: https://stackoverflow.com/questions/5740324/what-are-the-ipc-mechanisms-available-in-the-android-os/35450853
 
 
+# Android Framework Libraries
+Android framework libraries, sometimes calledjust “the framework.” The framework includes all Java libraries that are not part of the standard Java runtime (java.*, javax.*, and so on) and is for the most part hosted under the android top-level package. The framework includes the basic blocks for building Android applications, such as the base classes for activities, services, and content providers (in the android.app.*packages); GUI widgets (in the android.view.* and android.widget packages);and classes for file and database access (mostly in the android.database.* and
+android.content.* packages). It also includes classes that let you interact with device hardware, as well as classes that take advantage of higher-level services offered by the system.
 
+# System Apps
+System apps are included in the OS image, which is read-only on production devices (typically mounted as /system), and cannot be uninstalled or changed by users. Therefore, these apps are considered secure and are given many more privileges than user-installed apps. System apps can be part of the core Android OS or can simply be preinstalled user applications, such as email clients or browsers. While all apps installed under /system were treated equally in earlier versions of Android (except by OS features that check the app signing certificate), Android 4.4 and higher treat apps installed in /system/priv-app/ as privileged applications and will only grant permissions with protection level signature Or System to privileged apps, not to all apps installed under /system. Apps that are signed with the platform signing key can be granted system permissions with the signature protection level, and thus can get OS-level privileges even if they are not preinstalled under /system.While system apps cannot be uninstalled or changed, they can be updated by users as long as the updates are signed with the same private key, and some can be overridden by user-installed apps. For example, a user can choose to replace the preinstalled application launcher or input method with a third-party application.
+
+# User-Installed Apps 
+User-installed apps are installed on a dedicated read-write partition (typically mounted as /data) that hosts user data and can be uninstalled at will. Each application lives in a dedicated security sandbox and typically cannot affect other applications or access their data
+
+# Android’s security model
+Android automatically assigns a unique UID/app ID to each applications at installations and executes that application in a dedicated process running as that UID.Thus they are said to be _sandboxed_ or _isolated_,both at the process level
+(by having each run in a dedicated process) and at the file level (by having a private data directory). This creates a kernel-level application sandbox, which applies to all applications, regardless of whether they are executed in a native or virtual machine process.
 
 
