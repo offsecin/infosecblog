@@ -99,4 +99,10 @@ User-installed apps are installed on a dedicated read-write partition (typically
 Android automatically assigns a unique UID/app ID to each applications at installations and executes that application in a dedicated process running as that UID.Thus they are said to be _sandboxed_ or _isolated_,both at the process level
 (by having each run in a dedicated process) and at the file level (by having a private data directory). This creates a kernel-level application sandbox, which applies to all applications, regardless of whether they are executed in a native or virtual machine process.
 
+Android does not have the traditional /etc/password file and its system UIDs are statically defined in the android_filesystem_config.h header file.UIDs for system services start from 1000, with 1000 being the system (AID_SYSTEM) user, which has special (but still limited) privileges.Automatically generated UIDs for applications start at 10000 (AID_APP), and the corresponding usernames are in the form app_XXX or uY_aXXX (on Android versions that support multiple physical users), where XXX is the offset from AID_APP and Y is the Android user ID (not the same as UID). 
+**Application UIDs are managed alongside other package metadata in the /data/system/packages.xml file (the canonical source) and also written to the /data/system/packages.list file**
+
+**Applications can be installed using the same UID, called a shared user ID, in which case they can share files and even run in the same process. Shared user IDs are used extensively by system applications, which often need to use the same resources across different packages for modularity. **
+
+Note: While the shared user ID facility is not recommended for non-system apps, it’s available to third-party applications as well. In order to share the same UID, applications need to be signed by the same code signing key. Additionally, because adding a shared user ID to a new version of an installed app causes it to change its UID, the system disallows this. Therefore, a shared user ID cannot be added retroactively, and apps need to be designed to work with a shared ID from the start.
 
