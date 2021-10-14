@@ -157,4 +157,55 @@ Android includes SELinux in enforcing mode and a corresponding security policy t
  '''
 
  Note: Downloading app directly from some source and installing them is known as **sideloading ** of apps.
+ Note: Usually system apps are located in /system/app while /system/priv-app holds privleged apps granted with permisson,likewise /system/vendor/app hosts vendor specific applications.User installed apps are located at /data/app.The userdata partition also hosts the optimized DEX files for user-installed applications (in /data/dalvik-cache/), the system package database (in /data/system/packages .xml), and other system databases and settings files.
  
+ # Signature Verification
+The first step is to check whether the new package has been signed by the same set of signers as the existing one. This rule is referred to as same origin policy, or Trust On First Use (TOFU). This signature check guarantees that the update is produced by the same entity as the original application (assuming that the signing key has not been compromised) and establishes a trust relationship between the update and the existing application.
+ 
+ # Encrypted APKs
+ Encrypted APKs can be installed using the Google Play Store client, or with the pm command from the Android shell, but the system PackageInstaller does not support encrypted APKs.
+adb install [-l] [-r] [-s] [--algo <algorithm name> --key <hex-encoded key> --iv <hex-encoded iv>] <file>
+ 
+Note: SDCard uses FAT file system which lacks permission.So encrypted apks are stored using mounted using Android Secure External Caches, or ASEC containers.  ASEC container management (creating, deleting, mounting, and unmounting) is implemented in the system volume daemon (vold), and the MountService provides an interface to its functionality to framework services. 
+ '''
+ # ls -l /mnt/asec/com.example.app-1
+drwxr-xr-x system system lib
+drwx------ root root lost+found
+-rw-r----- system u0_a96 1319057 pkg.apk
+-rw-r--r-- system system 526091 res.zip
+ '''
+Here, the res.zip holds app resources and the manifest file and is world readable, while the pkg.apk file that holds the full APK is only readable by the system and the app’s dedicated user (u0_a96). The actual app containers are stored in /data/app-asec/ in files with the .asec extension.
+
+ 
+ # Foward Locking Mechanism
+To prevent users from simply copying paid apps from the SD card, Android 2.2 created an encrypted filesystem image file and stored the APK in it when a user opted to move an app to external storage. The system would then create a mount point for the encrypted image, and mount it using Linux’s device-mapper. Android loaded each app’s files from its
+mount point at runtime. Android 4.1 built on this idea by making the container use the ext4 filesystem, which allows for file permissions
+ '''
+ # ls -l /mnt/asec/com.example.app-1
+drwxr-xr-x system system lib
+drwx------ root root lost+found
+-rw-r----- system u0_a96 1319057 pkg.apk
+-rw-r--r-- system system 526091 res.zip
+ '''
+ We can also use the vdc command-line utility to interact with vold in order to manage forward-locked apps from Android’s shell.
+ ''' 
+ # vdc asec listu
+vdc asec list
+111 0 com.example.app-1
+111 0 org.foo.app-1
+200 0 asec operation succeeded
+# vdc asec path com.example.app-1v
+vdc asec path com.example.app-1
+211 0 /mnt/asec/com.example.app-1
+ '''
+ # Android User MetaData
+ '''
+ Android stores user data in the /data/system/users/ directory that hosts
+metadata about users in XML format, as well as user directories. On a
+device with five users, its contents may look like Listing
+# ls -lF /data/system/users
+drwx------ system system 0u
+-rw------- system system 230 0.xmlv
+drwx------ system system 10
+-rw------- system system 245 10.xml
+ '''
