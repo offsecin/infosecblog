@@ -12,6 +12,10 @@ The hardware abstraction layer (HAL) provides standard interfaces that expose de
 
 For devices running Android version 5.0 (API level 21) or higher, each app runs in its own process and with its own instance of the Android Runtime (ART). ART is written to run multiple virtual machines on low-memory devices by executing DEX files, a bytecode format designed specially for Android that's optimized for minimal memory footprint. Build tools, such as d8, compile Java sources into DEX bytecode, which can run on the Android platform.
 
+IMG: https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-art-flow.png
+
+
+
 ## Some of the major features of ART include the following:
 
      * Ahead-of-time (AOT) and just-in-time (JIT) compilation
@@ -86,6 +90,8 @@ Ref: https://forum.xda-developers.com/t/explained-difference-between-odex-and-de
 ![Compiling and linking](https://static.javatpoint.com/images/androidimages/flow.jpg)
 
 Note: Dalvik and Oracle’s JVM have different architectures—register-based in Dalvik versus stack-based in the JVM.Register-based models are good at optimizing and running on low memory. They can store common sub-expression results which can be used again in the future. This is not possible in a Stack-based model at all. Dalvik Virtual Machine uses its own byte-code and runs “.dex”(Dalvik Executable File) file.
+
+img: https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png 
 
 ## Advantages
 
