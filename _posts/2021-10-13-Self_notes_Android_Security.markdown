@@ -209,3 +209,21 @@ drwx------ system system 0u
 drwx------ system system 10
 -rw------- system system 245 10.xml
  '''
+
+ # Device Security
+ A bootloader is a specialized, hardware-specific program that executes when a device is first powered on (coming out of reset for ARM devices). Its purpose is to initialize device hardware, optionally provide a minimal device configuration interface, and then find and start the operating system.
+ # Recovery
+  In Android, recovery refers to the dedicated, bootable partition that has the recovery console installed.  A combination of key presses (or instructions from a command line) will boot your phone to recovery, where you can find tools to help repair (recover) your installation as well as install official OS updates.
+ 
+ 
+ # There are two types of recovery mode.
+
+  ** Stock Recovery — This is the official recovery installed on your android device.Each and every android device has Stock Recovery installed in it.You can find above mentioned functionalities in Stock Recovery , but note that Stock Recovery only allows official updates.You cant install unofficial updates or Custom ROM’s using Stock Recovery , because Stock Recovery always checks the file integrity, checksum along with signature before installing.
+  ** Custom Recovery — If you need to install an Unofficial update or Custom ROM, you can’t use Stock Recovery because Unofficial things don’t have valid signature on it.Then you can replace your Stock Recovery with a matching Custom Recovery.Custom Recovery will install updates or ROM’s without checking the signature,but it will increase the possibilities of installing mismatching update on your device , which will brick it! If you still need to install a custom recovery, there are CWM(clockworkmod), TWRP (TeamWin Recovery Project) and CMRecovery(from CynogenMod) custom recoveries available for you!
+ 
+ 
+ # System On Chip (SoC)
+ System-on-Chip (SoC) is the name given to a single piece of silicon that includes the CPU core, along with a graphics processing unit (GPU), random access memory (RAM), input/output (I/O) logic, and sometimes more.
+ 
+Note: Android follows AID concept instead of traditionla unix like UID/GID.Though all AID entries map to both a UID and GID, the UID may not necessarily be used to represent a user on the system. For instance, AID_SDCARD_RW maps to sdcard_rw, but is used only as a supplemental group, not as a UID on the system.One can find definitions for AIDs in system/core/ include/private/android_filesystem_config.
+ 
