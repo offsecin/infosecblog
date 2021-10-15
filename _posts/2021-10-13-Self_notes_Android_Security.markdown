@@ -26,6 +26,59 @@ Android also includes a set of core runtime libraries that provide most of the f
 
 Ref: https://developer.android.com/guide/platform#linux-kernel
 
+
+
+# Difference b/w JIT and AOT
+JIT - Compile TypeScript just in time for executing it.
+
+    Compiled in the browser.
+    Each file compiled separately.
+    No need to build after changing your code and before reloading the browser page.
+    Suitable for local development.
+
+ AOT - Compile TypeScript during build phase.
+
+    Compiled by the machine itself, via the command line (Faster).
+    All code compiled together, inlining HTML/CSS in the scripts.
+    No need to deploy the compiler (Half of Angular size).
+    More secure, original source not disclosed.
+    Suitable for production builds.
+
+Ref: https://stackoverflow.com/questions/41450226/just-in-time-jit-vs-ahead-of-time-aot-compilation-in-angular
+
+
+# Odex versus Deodex​
+
+One commonly occurring word when playing with custom ROMs and firmware, and even themes is deodexed and odexed. Most users fail to understand what these terms actually imply, and while developers would boast again and again about their themes and ROMs being deodexed, the average user is left clueless as to what is going on.
+
+What is an .odex file?
+
+In Android file system, applications come in packages with the extension .apk. These application packages, or APKs contain certain .odex files whose supposed function is to save space. These ‘odex’ files are actually collections of parts of an application that are optimized before booting. Doing so speeds up the boot process, as it preloads part of an application. On the other hand, it also makes hacking those applications difficult because a part of the coding has already been extracted to another location before execution.
+
+Then comes deodex!
+
+Deodexing is basically repackaging of these APKs in a certain way, such that they are reassembled into classes.dex files. By doing that, all pieces of an application package are put together back in one place, thus eliminating the worry of a modified APK conflicting with some separate odexed parts.
+
+In summary, Deodexed ROMs (or APKs) have all their application packages put back together in one place, allowing for easy modification such as theming. Since no pieces of code are coming from any external location, custom ROMs or APKs are always deodexed to ensure integrity.
+
+How this works
+
+For the more geeky amongst us, Android OS uses a Java-based virtual machine for running applications, called the Dalvik Virtual Machine. A deodexed, or .dex file contains the cache used by this virtual machine (referred to as Dalvik-cache) for a program, and it is stored inside the APK. An .odex file, on the other hand, is an optimized version of this same .dex file that is stored next to the APK as opposed to inside it. Android applies this technique by default to all the system applications.
+
+Now, when an Android-based system is booting, the davlik cache for the Davlik VM is built using these .odex files, allowing the OS to learn in advance what applications will be loaded, and thus speeds up the booting process.
+
+By deodexing these APKs, a developer actually puts the .odex files back inside their respective APK packages. Since all code is now contained within the APK itself, it becomes possible to modify any application package without conflicting with the operating system’s execution environment.
+
+Advantages & Disadvantages
+
+The advantage of deodexing is in modification possibilities. This is most widely used in custom ROMs and themes. A developer building a custom ROM would almost always choose to deodex the ROM package first, since that would not only allow him to modify various APKs, but also leave room for post-install theming.
+
+On the other hand, since the .odex files were supposed to quickly build the dalvik cache, removing them would mean longer initial boot times. However, this is true only for the first ever boot after deodexing, since the cache would still get built over time as applications are used. Longer boot times may only be seen again if the dalvik cache is wiped for some reason.
+
+For a casual user, the main implication is in theming possibilities. Themes for android come in APKs too, and if you want to modify any of those, you should always choose a dedoexed custom ROM.
+
+Ref: https://forum.xda-developers.com/t/explained-difference-between-odex-and-deodex.2224570/
+
 # Dalvik VM
 
 1. Dalvik VM is a (register based) android virtual machine optimized for mobile devices.Dalvik was designed with mobile devices in mind and cannot run Java bytecode (.class files) directly.Its native input format is called Dalvik Executable (DEX) and is packaged in .dex files. In turn, .dex files are packaged either inside system Java libraries (JAR files), or inside Android applications. 
@@ -235,3 +288,6 @@ Note: Android follows AID concept instead of traditionla unix like UID/GID.Thoug
  
 Zygote One of the first processes started when an Android device boots is the Zygote process. Zygote, in turn, is responsible for starting additional services and loading libraries used by the Android Framework. The Zygote process then acts as the loader for each Dalvik process by creating a copy of itself, or forking. This optimization prevents having to repeat the expensive process of loading the Android Framework and its dependencies when starting Dalvik processes (including apps). As a result, core libraries, core classes, and their corresponding heap structures are shared across instances of the DalvikVM. Zygote’s second order of business is starting the system_server process. This process holds all of the core services that run with elevated privileges under the system AID.
 NOTE: The system_server process is so important that killing it makes the device appear to reboot. However, only the device’s Dalvik subsystem is actually rebooting.
+ 
+ 
+ Note: Fastboot is the standard Android protocol for flashing full disk images to specific partitions over USB. The fastboot client utility is a command-line tool 
