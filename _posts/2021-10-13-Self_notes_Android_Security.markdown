@@ -107,6 +107,8 @@ Android does not have the traditional /etc/password file and its system UIDs are
 Note: While the shared user ID facility is not recommended for non-system apps, it’s available to third-party applications as well. In order to share the same UID, applications need to be signed by the same code signing key. Additionally, because adding a shared user ID to a new version of an installed app causes it to change its UID, the system disallows this. Therefore, a shared user ID cannot be added retroactively, and apps need to be designed to work with a shared ID from the start.
 
 ##### Android Permissions 
+Applications’ permissions are extracted from the application’s manifest at install time by the PackageManager and stored in /data/system/packages.xml
+The permission-to-group mappings are stored in /etc/permissions/platform.xml
 
 
 # Android Multi-User Support
@@ -227,3 +229,6 @@ drwx------ system system 10
  
 Note: Android follows AID concept instead of traditionla unix like UID/GID.Though all AID entries map to both a UID and GID, the UID may not necessarily be used to represent a user on the system. For instance, AID_SDCARD_RW maps to sdcard_rw, but is used only as a supplemental group, not as a UID on the system.One can find definitions for AIDs in system/core/ include/private/android_filesystem_config.
  
+ # Zygote
+Zygote One of the first processes started when an Android device boots is the Zygote process. Zygote, in turn, is responsible for starting additional services and loading libraries used by the Android Framework. The Zygote process then acts as the loader for each Dalvik process by creating a copy of itself, or forking. This optimization prevents having to repeat the expensive process of loading the Android Framework and its dependencies when starting Dalvik processes (including apps). As a result, core libraries, core classes, and their corresponding heap structures are shared across instances of the DalvikVM. Zygote’s second order of business is starting the system_server process. This process holds all of the core services that run with elevated privileges under the system AID.
+NOTE: The system_server process is so important that killing it makes the device appear to reboot. However, only the device’s Dalvik subsystem is actually rebooting.
