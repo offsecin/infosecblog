@@ -300,3 +300,10 @@ NOTE: The system_server process is so important that killing it makes the device
  
  
  Note: Fastboot is the standard Android protocol for flashing full disk images to specific partitions over USB. The fastboot client utility is a command-line tool 
+
+ 
+ 
+ ######################-----------Binary Exploitation Notes----------######################################
+ Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628
+ 
+ Tip:  PLT is stored in code segment, hence is readable & executable, whereas GOT is stored in data segment, hence is readable & writable. 
