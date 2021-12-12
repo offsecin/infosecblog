@@ -306,4 +306,27 @@ NOTE: The system_server process is so important that killing it makes the device
  ######################-----------Binary Exploitation Notes----------######################################
  Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628 https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html
  
+ 
+No eXecute (NX Bit):The No eXecute or the NX bit (also known as Data Execution Prevention or DEP) marks certain areas of the program as not executable, meaning that stored input or data cannot be executed as code. This is significant because it prevents attackers from being able to jump to custom shellcode that they've stored on the stack or in a global variable.
+ 
+Relocation Read-Only (RELRO):Relocation Read-Only (or RELRO) is a security measure which makes some binary sections read-only.
+
+There are two RELRO "modes": partial and full.
+-Partial RELRO:Partial RELRO is the default setting in GCC, and nearly all binaries you will see have at least partial RELRO.
+
+ From an attackers point-of-view, partial RELRO makes almost no difference, other than it forces the GOT to come before the BSS in memory, eliminating the risk of a buffer overflows on a global variable overwriting GOT entries.
+Full RELRO
+
+Full RELRO makes the entire GOT read-only which removes the ability to perform a "GOT overwrite" attack, where the GOT address of a function is overwritten with the location of another function or a ROP gadget an attacker wants to run.Full RELRO is not a default compiler setting as it can greatly increase program startup time since all symbols must be resolved before the program is started. In large programs with thousands of symbols that need to be linked, this could cause a noticable delay in startup time.
+ 
+ 
  Tip:  PLT is stored in code segment, hence is readable & executable, whereas GOT is stored in data segment, hence is readable & writable. 
+ 
+ Stack Canaries: Stack Canaries are a secret value placed on the stack which changes every time the program is started. Prior to a function return, the stack canary is checked and if it appears to be modified, the program exits immeadiately. 
+ 
+ 
+Address Space Layout Randomization (ASLR): Address Space Layout Randomization (or ASLR) is the randomization of the place in memory where the program, shared libraries, the stack, and the heap are. This makes can make it harder for an attacker to exploit a service, as knowledge about where the stack, heap, or libc can't be re-used between program launches. This is a partially effective way of preventing an attacker from jumping to, for example, libc without a leak.
+
+Typically, only the stack, heap, and shared libraries are ASLR enabled. It is still somewhat rare for the main program to have ASLR enabled, though it is being seen more frequently and is slowly becoming the default.
+
+ DEP: DEP marks certain areas in memory (typically the user-writable parts) as non-executable so that attempts to execute code in these regions would cause an exception.
