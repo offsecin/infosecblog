@@ -304,6 +304,6 @@ NOTE: The system_server process is so important that killing it makes the device
  
  
  ######################-----------Binary Exploitation Notes----------######################################
- Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628
+ Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628 https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html
  
  Tip:  PLT is stored in code segment, hence is readable & executable, whereas GOT is stored in data segment, hence is readable & writable. 
