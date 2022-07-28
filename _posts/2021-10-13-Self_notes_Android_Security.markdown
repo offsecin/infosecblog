@@ -33,23 +33,32 @@ Ref: https://developer.android.com/guide/platform#linux-kernel
 
 
 # Difference b/w JIT and AOT
-JIT - Compile TypeScript just in time for executing it.
+Just In Time (JIT):
 
-    Compiled in the browser.
-    Each file compiled separately.
-    No need to build after changing your code and before reloading the browser page.
-    Suitable for local development.
+With the Dalvik JIT compiler, each time when the app is run, it dynamically translates a part of the Dalvik bytecode into machine code. As the execution progresses, more bytecode is compiled and cached. Since JIT compiles only a part of the code, it has a smaller memory footprint and uses less physical space on the device.
 
- AOT - Compile TypeScript during build phase.
+Ahead Of Time (AOT):
 
-    Compiled by the machine itself, via the command line (Faster).
-    All code compiled together, inlining HTML/CSS in the scripts.
-    No need to deploy the compiler (Half of Angular size).
-    More secure, original source not disclosed.
-    Suitable for production builds.
+ART is equipped with an Ahead-of-Time compiler. During the app’s installation phase, it statically translates the DEX bytecode into machine code and stores in the device’s storage. This is a one-time event which happens when the app is installed on the device.
 
-Ref: https://stackoverflow.com/questions/41450226/just-in-time-jit-vs-ahead-of-time-aot-compilation-in-angular
+Android N includes a hybrid runtime:
 
+There won’t be any compilation during install, and applications can be started right away, the bytecode being interpreted. There is a new, faster interpreter in ART and it is accompanied by a new JIT, but the JIT information is not persisted. Instead, the code is profiled during execution and the resulted data is saved.
+
+Benefits of ART:
+
+    Apps run faster as DEX bytecode translation done during installation.
+    Reduces startup time of applications as native code is directly executed.
+    Improves battery performance as power utilized to interpreted byte codes line by line is saved.
+    Improved garbage collector.
+
+Drawbacks of ART:
+
+    App Installation takes more time because of DEX bytecodes conversion into machine code during installation.
+
+    As the native machine code generated on installation is stored in internal storage, more internal storage is require
+
+https://stackoverflow.com/questions/40336455/difference-between-aot-and-jit-compiler-in-the-art
 
 # Odex versus Deodex​
 
