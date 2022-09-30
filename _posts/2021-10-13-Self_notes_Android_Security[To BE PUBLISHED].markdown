@@ -301,7 +301,7 @@ drwx------ system system 10
 Note: Android follows AID concept instead of traditionla unix like UID/GID.Though all AID entries map to both a UID and GID, the UID may not necessarily be used to represent a user on the system. For instance, AID_SDCARD_RW maps to sdcard_rw, but is used only as a supplemental group, not as a UID on the system.One can find definitions for AIDs in system/core/ include/private/android_filesystem_config.
  
  # Zygote
- ![Android Boot] (https://miro.medium.com/max/433/0*4zrPhMmFvSwkfJcg.png)
+ ![Android Boot](https://miro.medium.com/max/433/0*4zrPhMmFvSwkfJcg.png)
  Ref: https://medium.com/android-news/android-boot-process-8f7d94ff9889
  
 Zygote One of the first processes started when an Android device boots is the Zygote process. Zygote, in turn, is responsible for starting additional services and loading libraries used by the Android Framework. The Zygote process then acts as the loader for each Dalvik process by creating a copy of itself, or forking. This optimization prevents having to repeat the expensive process of loading the Android Framework and its dependencies when starting Dalvik processes (including apps). As a result, core libraries, core classes, and their corresponding heap structures are shared across instances of the DalvikVM. Zygote’s second order of business is starting the system_server process. This process holds all of the core services that run with elevated privileges under the system AID.
