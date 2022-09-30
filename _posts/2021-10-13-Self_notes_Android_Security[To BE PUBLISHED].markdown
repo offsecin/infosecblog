@@ -17,7 +17,7 @@ The hardware abstraction layer (HAL) provides standard interfaces that expose de
 
 For devices running Android version 5.0 (API level 21) or higher, each app runs in its own process and with its own instance of the Android Runtime (ART). ART is written to run multiple virtual machines on low-memory devices by executing DEX files, a bytecode format designed specially for Android that's optimized for minimal memory footprint. Build tools, such as d8, compile Java sources into DEX bytecode, which can run on the Android platform.
 
-IMG:  ![Android Runtime]([https://developer.android.com/guide/platform/images/android-stack_2x.png](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-art-flow.png)
+IMG:  ![Android Runtime](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-art-flow.png)
 
 
 
