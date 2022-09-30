@@ -96,8 +96,9 @@ msg.sender.transfer(withdraw_amount);
 
 // Accept any incoming amount
 
-function () public payable {} //This is afallback or default function that triggered the contract didn’t name any of the 
-declared functions in the contract.It doesn’t do anything, other than accept the ether.
+function () public payable {} //This is afallback or default function that triggered the
+contract didn’t name any of the declared functions in the contract.It doesn’t do anything, 
+other than accept the ether.
 }
 ```
 
