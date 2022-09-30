@@ -22,10 +22,10 @@ IMG:  ![Android Runtime]([https://developer.android.com/guide/platform/images/an
 
 ## Some of the major features of ART include the following:
 
-     * Ahead-of-time (AOT) and just-in-time (JIT) compilation
-    * Optimized garbage collection (GC)
-    * On Android 9 (API level 28) and higher, conversion of an app package's Dalvik Executable format (DEX) files to more compact machine code.
-    * Better debugging support, including a dedicated sampling profiler, detailed diagnostic exceptions and crash reporting, and the ability to set watchpoints to monitor specific fields
+* Ahead-of-time (AOT) and just-in-time (JIT) compilation
+* Optimized garbage collection (GC)
+* On Android 9 (API level 28) and higher, conversion of an app package's Dalvik Executable format (DEX) files to more compact machine code.
+* Better debugging support, including a dedicated sampling profiler, detailed diagnostic exceptions and crash reporting, and the ability to set watchpoints to monitor specific fields
 
 Prior to Android version 5.0 (API level 21), Dalvik was the Android runtime. If your app runs well on ART, then it should work on Dalvik as well, but the reverse may not be true.
 
