@@ -140,7 +140,7 @@ The JDK is a superset of the JRE, and contains everything that is in the JRE, pl
 The Java Virtual Machine (JVM) is the virtual machine that runs the Java bytecodes. The JVM doesn't understand Java source code; that's why you need compile your *.java files to obtain *.class files that contain the bytecodes understood by the JVM. It's also the entity that allows Java to be a "portable language" (write once, run anywhere). Indeed, there are specific implementations of the JVM for different systems (Windows, Linux, macOS, see the Wikipedia list), the aim is that with the same bytecodes they all give the same results.    
     
     
-    Ref: https://stackoverflow.com/questions/11547458/what-is-the-difference-between-jvm-jdk-jre-openjdk
+Ref: https://stackoverflow.com/questions/11547458/what-is-the-difference-between-jvm-jdk-jre-openjdk
     
     
 #  Java Native Interface (JNI) 
