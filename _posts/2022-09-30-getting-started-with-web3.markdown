@@ -28,7 +28,7 @@ store, i.e., a store that can hold any data expressible as a key–value tuple.
 
 Note:Unlike Bitcoin which has a very limited scripting language, Ethereum is designed to be a general-purpose programmable blockchain that runs a virtual machine capable of executing code of arbitrary and unbounded complexity. Where Bitcoin’s Script lan‐ guage is, intentionally, constrained to simple true/false evaluation of spending condi‐ tions, Ethereum’s language is Turing complete, meaning that Ethereum can straightforwardly function as a general-purpose computer.
 
-#### Components of a Blockchain
+##### Components of a Blockchain
 - A peer-to-peer network
 - Messages in the form of transactions
 - A set of consensus rules governing rules for a valid transactions
