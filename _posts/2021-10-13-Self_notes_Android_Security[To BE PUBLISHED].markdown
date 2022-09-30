@@ -7,7 +7,8 @@ Update: Please note that this might not be the complete version at the time you 
 # Android’s architecture
 Android is an open source, Linux-based software stack created for a wide array of devices and form factors. The following diagram shows the major components of the Android platform.
  
- ![Android Structure](https://ibb.co/xqGsQm5)
+![Android Structure]([[http://url/to/img.png](https://i.ibb.co/qY9nw01/imageedit-1-9754888965.png)](https://i.ibb.co/qY9nw01/imageedit-1-9754888965.png))
+
  
  
 # Hardware Abstraction Layer (HAL)
