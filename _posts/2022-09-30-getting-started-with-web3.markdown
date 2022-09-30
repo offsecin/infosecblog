@@ -28,7 +28,7 @@ store, i.e., a store that can hold any data expressible as a key–value tuple.
 
 Note:Unlike Bitcoin which has a very limited scripting language, Ethereum is designed to be a general-purpose programmable blockchain that runs a virtual machine capable of executing code of arbitrary and unbounded complexity. Where Bitcoin’s Script lan‐ guage is, intentionally, constrained to simple true/false evaluation of spending condi‐ tions, Ethereum’s language is Turing complete, meaning that Ethereum can straightforwardly function as a general-purpose computer.
 
-## Components of a Blockchain
+#### Components of a Blockchain
 - A peer-to-peer network
 - Messages in the form of transactions
 - A set of consensus rules governing rules for a valid transactions
@@ -39,7 +39,13 @@ Note:Unlike Bitcoin which has a very limited scripting language, Ethereum is des
 
 Ethereum’s ability to execute a stored program, in a state machine called the Ethereum Virtual Machine, while reading and writing data to memory makes it a Turing- complete system and therefore a UTM (Universal Turing machine). Ethereum can compute any algorithm that can be computed by any Turing machine, given the limitations of finite memory.
 
+##### UTM : 
+
 To avoid DOS attacks/infinite loops due to unexptected transactions, Ethereum introduced a mechanism called `gas`.Each instruction has a predetermined cost in units of gas. When a transaction triggers the execution of a smart contract, it must include an amount of gas that sets the upper limit of what can be consumed running the smart contract. The EVM will terminate execution if the amount of gas consumed by com‐ putation exceeds the gas available in the transaction. Gas is the mechanism Ethereum uses to allow Turing-complete computation while limiting the resources that any pro‐ gram can consume.
 Gas can only be purchased as part of a transaction, and can only be bought with ether.Gas is purchased for the transaction, the computation is executed, and any unused gas is refunded back to the sender of the transaction.
 
+
+##### DApps :  
 Dapps is a set of contracts and a web interface using the ethereum’s infrastructure.
+
+
