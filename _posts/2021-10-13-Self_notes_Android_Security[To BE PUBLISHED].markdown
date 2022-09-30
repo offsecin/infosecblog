@@ -107,25 +107,25 @@ Ref: https://forum.xda-developers.com/t/explained-difference-between-odex-and-de
 
 Note: Dalvik and Oracle’s JVM have different architectures—register-based in Dalvik versus stack-based in the JVM.Register-based models are good at optimizing and running on low memory. They can store common sub-expression results which can be used again in the future. This is not possible in a Stack-based model at all. Dalvik Virtual Machine uses its own byte-code and runs “.dex”(Dalvik Executable File) file.
 
-img: ![Image]([https://static.javatpoint.com/images/androidimages/flow.jpg](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png ))
+img: ![Image](https://static.javatpoint.com/images/androidimages/flow.jpg](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png)
 
 
 ## Advantages
 
-    DVM supports the Android operating system only.
-    In DVM executable is APK.
-    Execution is faster.
-    From Android 2.2 SDK Dalvik has it’s own JIT (Just In Time) compiler.
-    DVM has been designed so that a device can run multiple instances of the Virtual Machine effectively.
-    Applications are given their own instances.
+* DVM supports the Android operating system only.
+* In DVM executable is APK.
+* Execution is faster.
+* From Android 2.2 SDK Dalvik has it’s own JIT (Just In Time) compiler.
+* DVM has been designed so that a device can run multiple instances of the Virtual Machine effectively.
+* Applications are given their own instances.
 
 ## Disadvantages
 
-    DVM supports only Android Operating System.
-    For DVM very few Re-Tools are available.
-    Requires more instructions than register machines to implement the same high-level code.
-    App Installation takes more time due to dex.
-    More internal storage is required.
+* DVM supports only Android Operating System.
+* For DVM very few Re-Tools are available.
+* Requires more instructions than register machines to implement the same high-level code.
+* App Installation takes more time due to dex.
+* More internal storage is required.
     
 Ref: https://www.geeksforgeeks.org/what-is-dvmdalvik-virtual-machine/
     
@@ -212,7 +212,7 @@ Android includes SELinux in enforcing mode and a corresponding security policy t
  APK : typically a zip/jar archieve (MIME type: application/vnd.android.package-archive)
  
  
- '''
+```
  apk/
 |-- AndroidManifest.xml
 |-- classes.dex
@@ -235,7 +235,7 @@ Android includes SELinux in enforcing mode and a corresponding security policy t
 |-- menu/
 |-- raw/
 `-- xml/
- '''
+```
 
  Note: Downloading app directly from some source and installing them is known as **sideloading ** of apps.
  Note: Usually system apps are located in /system/app while /system/priv-app holds privleged apps granted with permisson,likewise /system/vendor/app hosts vendor specific applications.User installed apps are located at /data/app.The userdata partition also hosts the optimized DEX files for user-installed applications (in /data/dalvik-cache/), the system package database (in /data/system/packages .xml), and other system databases and settings files.
