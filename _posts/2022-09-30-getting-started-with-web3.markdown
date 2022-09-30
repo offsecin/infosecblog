@@ -13,9 +13,10 @@ This is my first blog about Web3, so please find the below resources that will g
 - https://github.com/Anugrahsr/Awesome-web3-Security
 - https://sm4rty.medium.com/roadmap-for-web3-smart-contract-hacking-2022-229e4e1565f9
 
-So, let's get started with a book called `Mastering Ethereum`. The following section would cover the following important notes about the same book: 
+So, let's get started with a book called `Mastering Ethereum`. The following section would cover the following important notes about these topics that might be from different resources: 
 
 # Day 1 of Mastering Ethereum
-## Chapter 1: What is Ethereum?
+
+### Chapter 1: What is Ethereum?
 
 Ethereum is an open source, globally decentral‐ized computing infrastructure that executes programs called smart contracts. It uses a blockchain to synchronize and store the system’s state changes, along with a crypto‐currency called ether to meter and constrain execution resource costs.
