@@ -1,6 +1,6 @@
 Hey Readers,
 
-This section discusses the notes that I have come across while reading multiple books about Android internals and Android security. I am writing this for myself. However, you are free to use the resources if you want.
+This section discusses the notes that I have come across while reading multiple books about Android internals and Android security. I am writing this for to keep a track of the topics I have covered and a note to be used in future. However, you are free to use the resources if you want.
 
 # Android’s architecture
 Android is an open source, Linux-based software stack created for a wide array of devices and form factors. The following diagram shows the major components of the Android platform.
