@@ -37,6 +37,8 @@ Note:Unlike Bitcoin which has a very limited scripting language, Ethereum is des
 - A consensus algorithm that decentralizes control over the blockchain
 - A scheme to economically secure the state machine in an open environment
 
+##### GAS 
+
 Ethereum’s ability to execute a stored program, in a state machine called the Ethereum Virtual Machine, while reading and writing data to memory makes it a Turing- complete system and therefore a UTM (Universal Turing machine). Ethereum can compute any algorithm that can be computed by any Turing machine, given the limitations of finite memory.
 
 ##### UTM : 
