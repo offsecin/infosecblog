@@ -327,7 +327,7 @@ NOTE: The system_server process is so important that killing it makes the device
 
  
  
- ###################### -----------Binary Exploitation Notes--------- -######################################
+ # Binary Exploiation
  
  Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628 https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html
  
