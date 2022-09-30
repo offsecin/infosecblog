@@ -16,7 +16,7 @@ The hardware abstraction layer (HAL) provides standard interfaces that expose de
 
 For devices running Android version 5.0 (API level 21) or higher, each app runs in its own process and with its own instance of the Android Runtime (ART). ART is written to run multiple virtual machines on low-memory devices by executing DEX files, a bytecode format designed specially for Android that's optimized for minimal memory footprint. Build tools, such as d8, compile Java sources into DEX bytecode, which can run on the Android platform.
 
-IMG:  ![Android Runtime](https://i.ibb.co/8MxMyXJ/68747470733a2f2f73332e61702d736f7574682d312e616d617a6f6e6177732e636f6d2f6d696e646f726b732d7365727665.png)
+IMG:![Android Runtime](https://i.ibb.co/8MxMyXJ/68747470733a2f2f73332e61702d736f7574682d312e616d617a6f6e6177732e636f6d2f6d696e646f726b732d7365727665.png)
 
 
 
@@ -66,7 +66,7 @@ Drawbacks of ART:
 
 * As the native machine code generated on installation is stored in internal storage, more internal storage is require
 
-https://stackoverflow.com/questions/40336455/difference-between-aot-and-jit-compiler-in-the-art
+Ref: https://stackoverflow.com/questions/40336455/difference-between-aot-and-jit-compiler-in-the-art
 
 # Odex versus Deodex​
 
@@ -108,7 +108,7 @@ Ref: https://forum.xda-developers.com/t/explained-difference-between-odex-and-de
 
 Note: Dalvik and Oracle’s JVM have different architectures—register-based in Dalvik versus stack-based in the JVM.Register-based models are good at optimizing and running on low memory. They can store common sub-expression results which can be used again in the future. This is not possible in a Stack-based model at all. Dalvik Virtual Machine uses its own byte-code and runs “.dex”(Dalvik Executable File) file.
 
-img: ![Image](https://static.javatpoint.com/images/androidimages/flow.jpg](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png)
+img: ![Image](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png)
 
 
 ## Advantages
