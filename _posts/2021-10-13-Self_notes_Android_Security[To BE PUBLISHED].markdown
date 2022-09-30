@@ -35,8 +35,6 @@ Android also includes a set of core runtime libraries that provide most of the f
 
 Ref: https://developer.android.com/guide/platform#linux-kernel
 
-![Reference](https://developer.android.com/guide/platform/images/android-stack_2x.png)
-
 
 
 
