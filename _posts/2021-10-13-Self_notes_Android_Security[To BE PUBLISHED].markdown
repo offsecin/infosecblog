@@ -54,16 +54,16 @@ There won’t be any compilation during install, and applications can be started
 
 Benefits of ART:
 
-    Apps run faster as DEX bytecode translation done during installation.
-    Reduces startup time of applications as native code is directly executed.
-    Improves battery performance as power utilized to interpreted byte codes line by line is saved.
-    Improved garbage collector.
+* Apps run faster as DEX bytecode translation done during installation.
+* Reduces startup time of applications as native code is directly executed.
+* Improves battery performance as power utilized to interpreted byte codes line by line is saved.
+* Improved garbage collector.
 
 Drawbacks of ART:
 
-    App Installation takes more time because of DEX bytecodes conversion into machine code during installation.
+* App Installation takes more time because of DEX bytecodes conversion into machine code during installation.
 
-    As the native machine code generated on installation is stored in internal storage, more internal storage is require
+* As the native machine code generated on installation is stored in internal storage, more internal storage is require
 
 https://stackoverflow.com/questions/40336455/difference-between-aot-and-jit-compiler-in-the-art
 
