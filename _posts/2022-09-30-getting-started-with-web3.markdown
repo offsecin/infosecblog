@@ -51,3 +51,53 @@ Gas can only be purchased as part of a transaction, and can only be bought with 
 Dapps is a set of contracts and a web interface using the ethereum’s infrastructure.
 
 
+### Chapter 2: Ethereum Basics
+- Ethereum’s native currency is Ether also identified as ETH i.e 1 ether, or 1 ETH, or Ξ1, or ♦1. Its smallest unit is WEI, 1ETH=1*10^18 =1 Quintillion.
+- Ethereum wallet is your gateway to the Ethereum system. It holds your keys and can create/broadcast transactions on your behalf to the ethereum network.
+Some of the ETH wallets:
+- MetaMask (Browser Extension)
+- Jaxx
+- MEW
+
+
+##### EVM
+The ethereum virtual machine, is a global singleton, meaning that it operates as if it were a global, single-instance computer, running everywhere. Each node on the Ethereum network runs a local copy of the EVM to validate contract execution, while the Ethereum blockchain records the changing state of this world computer as it processes transactions and smart contracts.
+
+##### EOA and CA
+- Externally owned accounts are those that have a private key and owned by the user.
+- Contracts accounts refer to contracts which are deployed on the ethereum network containing some code and it does not have a prviate key.Contracts have addresses, just like EOAs. Contracts can also send and receive ether.
+
+Note that because a contract account does not have a private key, it cannot initiate a transaction.
+- Only EOAs can initiate transactions, but contracts can react to transac‐ tions by calling other contracts.
+- When a contract is created, a transaction with destination address 0x00 and data containing evm bytecode is sent across the network.Anytime someone sends a transaction to a contract address it causes the contract to run in the EVM, with the transaction as its input.
+- Calling a contract function (through transaction), creates an IN transaction (acc. to etherscan terms), while the contract calls and transfers and showed in the Internal Transactions.
+
+A sample contract:
+```
+ // Our first contract is a faucet!
+ contract Faucet {
+
+// Give out ether to anyone who asks
+
+function withdraw(uint withdraw_amount) public {
+
+// Limit withdrawal amount
+
+require(withdraw_amount <= 100000000000000000);
+
+// Send the amount to the address that requested it
+
+msg.sender.transfer(withdraw_amount);
+//The msg object is one of the inputs that all contracts can access
+//The attribute sender is the sender address of the transaction
+
+
+}
+
+
+// Accept any incoming amount
+
+function () public payable {} //This is afallback or default function that triggered the contract didn’t name any of the declared functions in the con‐
+tract.It doesn’t do anything, other than accept the ether.
+}
+```
