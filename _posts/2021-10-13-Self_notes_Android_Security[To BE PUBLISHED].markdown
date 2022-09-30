@@ -1,3 +1,6 @@
+Hey Readers,
+
+This section discusses the notes that I have come across while reading multiple books about Android internals and Android security. I am writing this for myself. However, you are free to use the resources if you want.
 
 # Android’s architecture
 Android is an open source, Linux-based software stack created for a wide array of devices and form factors. The following diagram shows the major components of the Android platform.
@@ -12,7 +15,8 @@ The hardware abstraction layer (HAL) provides standard interfaces that expose de
 
 For devices running Android version 5.0 (API level 21) or higher, each app runs in its own process and with its own instance of the Android Runtime (ART). ART is written to run multiple virtual machines on low-memory devices by executing DEX files, a bytecode format designed specially for Android that's optimized for minimal memory footprint. Build tools, such as d8, compile Java sources into DEX bytecode, which can run on the Android platform.
 
-IMG: https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-art-flow.png
+IMG:  ![Android Runtime]([https://developer.android.com/guide/platform/images/android-stack_2x.png](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-art-flow.png))
+
 
 
 
@@ -28,7 +32,8 @@ Prior to Android version 5.0 (API level 21), Dalvik was the Android runtime. If 
 Android also includes a set of core runtime libraries that provide most of the functionality of the Java programming language, including some Java 8 language features, that the Java API framework uses. 
 
 
-Ref: https://developer.android.com/guide/platform#linux-kernel
+Ref:  ![Reference]([https://developer.android.com/guide/platform/images/android-stack_2x.png](https://developer.android.com/guide/platform#linux-kernel))
+
 
 
 
@@ -100,7 +105,8 @@ Ref: https://forum.xda-developers.com/t/explained-difference-between-odex-and-de
 
 Note: Dalvik and Oracle’s JVM have different architectures—register-based in Dalvik versus stack-based in the JVM.Register-based models are good at optimizing and running on low memory. They can store common sub-expression results which can be used again in the future. This is not possible in a Stack-based model at all. Dalvik Virtual Machine uses its own byte-code and runs “.dex”(Dalvik Executable File) file.
 
-img: https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png 
+img: ![Image]([https://static.javatpoint.com/images/androidimages/flow.jpg](https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/differences-between-dalvik-and-art-dalvik-flow.png ))
+
 
 ## Advantages
 
@@ -240,29 +246,33 @@ The first step is to check whether the new package has been signed by the same s
 adb install [-l] [-r] [-s] [--algo <algorithm name> --key <hex-encoded key> --iv <hex-encoded iv>] <file>
  
 Note: SDCard uses FAT file system which lacks permission.So encrypted apks are stored using mounted using Android Secure External Caches, or ASEC containers.  ASEC container management (creating, deleting, mounting, and unmounting) is implemented in the system volume daemon (vold), and the MountService provides an interface to its functionality to framework services. 
- '''
+ 
+ ```
  # ls -l /mnt/asec/com.example.app-1
 drwxr-xr-x system system lib
 drwx------ root root lost+found
 -rw-r----- system u0_a96 1319057 pkg.apk
 -rw-r--r-- system system 526091 res.zip
- '''
+ ```
+ 
 Here, the res.zip holds app resources and the manifest file and is world readable, while the pkg.apk file that holds the full APK is only readable by the system and the app’s dedicated user (u0_a96). The actual app containers are stored in /data/app-asec/ in files with the .asec extension.
 
  
  # Foward Locking Mechanism
 To prevent users from simply copying paid apps from the SD card, Android 2.2 created an encrypted filesystem image file and stored the APK in it when a user opted to move an app to external storage. The system would then create a mount point for the encrypted image, and mount it using Linux’s device-mapper. Android loaded each app’s files from its
 mount point at runtime. Android 4.1 built on this idea by making the container use the ext4 filesystem, which allows for file permissions
- '''
+
+ ```
  # ls -l /mnt/asec/com.example.app-1
 drwxr-xr-x system system lib
 drwx------ root root lost+found
 -rw-r----- system u0_a96 1319057 pkg.apk
 -rw-r--r-- system system 526091 res.zip
- '''
+ ```
+ 
  We can also use the vdc command-line utility to interact with vold in order to manage forward-locked apps from Android’s shell.
- ''' 
- # vdc asec listu
+ ```
+# vdc asec listu
 vdc asec list
 111 0 com.example.app-1
 111 0 org.foo.app-1
@@ -270,9 +280,10 @@ vdc asec list
 # vdc asec path com.example.app-1v
 vdc asec path com.example.app-1
 211 0 /mnt/asec/com.example.app-1
- '''
+ ```
+ 
  # Android User MetaData
- '''
+ ```
  Android stores user data in the /data/system/users/ directory that hosts
 metadata about users in XML format, as well as user directories. On a
 device with five users, its contents may look like Listing
@@ -281,7 +292,7 @@ drwx------ system system 0u
 -rw------- system system 230 0.xmlv
 drwx------ system system 10
 -rw------- system system 245 10.xml
- '''
+```
 
  # Device Security
  A bootloader is a specialized, hardware-specific program that executes when a device is first powered on (coming out of reset for ARM devices). Its purpose is to initialize device hardware, optionally provide a minimal device configuration interface, and then find and start the operating system.
@@ -312,7 +323,8 @@ NOTE: The system_server process is so important that killing it makes the device
 
  
  
- ######################-----------Binary Exploitation Notes----------######################################
+ ###################### -----------Binary Exploitation Notes--------- -######################################
+ 
  Ref: https://infosecwriteups.com/got-overwrite-bb9ff5414628 https://tripoloski1337.github.io/ctf/2020/06/11/format-string-bug.html
  
  
