@@ -7,7 +7,7 @@ Update: Please note that this might not be the complete version at the time you 
 # Android’s architecture
 Android is an open source, Linux-based software stack created for a wide array of devices and form factors. The following diagram shows the major components of the Android platform.
  
-![Image]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://i.ibb.co/qY9nw01/imageedit-1-9754888965.png)) 
+![Image](https://i.ibb.co/qY9nw01/imageedit-1-9754888965.png)
  
 # Hardware Abstraction Layer (HAL)
 The hardware abstraction layer (HAL) provides standard interfaces that expose device hardware capabilities to the higher-level Java API framework. The HAL consists of multiple library modules, each of which implements an interface for a specific type of hardware component, such as the camera or bluetooth module. When a framework API makes a call to access device hardware, the Android system loads the library module for that hardware component. 
